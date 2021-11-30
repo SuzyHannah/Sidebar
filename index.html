@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="multibox"><!--Multibox-->
+  <div class="side_tab"><!--SIDETAB-->
+    <img src="asset/img/dashboard-assets/dashboard-assets/Instincthub logo.png" alt="Logo" class="margin-l">
+
+   <ul>
+     <li> <img src="asset/img/dashboard-assets/dashboard-assets/bx_bxs-dashboard.png" alt="dashboard" class="pic_drag">Overview</li>
+     <li> <img src="asset/img/dashboard-assets/dashboard-assets/akar-icons_file.png" alt="dashboard"  class="pic_drag">Classes</li>
+     <li> <img src="asset/img/dashboard-assets/dashboard-assets/codicon_graph.png" alt="dashboard"  class="pic_drag">Analysis</li>
+     <li> <img src="asset/img/dashboard-assets/dashboard-assets/ic_baseline-group.png" alt="dashboard"  class="pic_drag">Community</li>
+     <li> <img src="asset/img/dashboard-assets/dashboard-assets/fe_logout.png" alt="dashboard"  class="pic_drag">Logout</li>
+   </ul>
+
+   <div class="box"><!--BOX-->
+     <img src="asset/img/dashboard-assets/dashboard-assets/Upgrade illustration.png" alt="">
+     <p>Upgrade your student portal account</p>
+     <button>Upgrade</button>
+     </div><!--BOX ENDS-->
+
+   </div><!--SIDETAB ENDS-->
+
+  <div class="container"><!--CONTAINER-->
+     <section class="nav"><!--NAV-->
+       <h1>My Course Dashboard</h1>
+
+
+       <div class="profile_icon"><!--PROFILE_ICON-->
+       <input type="text" placeholder="Searching for...">
+       <img src="asset/img/dashboard-assets/dashboard-assets/bx_bx-search.png" alt="search">
+       <img src="asset/img/dashboard-assets/dashboard-assets/codicon_bell-dot.png" alt="bell">
+       <img src="asset/img/dashboard-assets/dashboard-assets/User profile.png" alt="avartar">
+      </div><!--PROFILE_ICON ENDS-->
+     </section><!--NAV ENDS-->
+
+      <div class="doughnut_box"> <!--Doughnut_box-->
+
+        <div class="d_wrap "><!--D_wrap-->
+        <div class="doughnut"><!--Doughnut-->
+          <canvas id="daily" width="400" height="400"></canvas>
+        </div><!--Doughnut Ends-->
+
+        <h1 class="seventy">70%</h1>
+        <p>Daily <br> <span>Activities</span></p>
+      </div>
+
+      <div class="d_wrap">
+        <div class="doughnut">
+          <canvas id="monthly" width="400" height="400"></canvas>
+        </div>
+
+          <h1 class="seventy">20%</h1>
+        <p>Monthly <br> <span>Activities</span></p>
+      </div>
+        
+      <div class="d_wrap">
+        <div class="doughnut">
+          <canvas id="yearly" width="400" height="400"></canvas>
+          </div>
+
+          <h1 class="seventy">15%</h1>
+        <p>Yearly <br> <span>Activities</span></p>
+      </div>
+      </div><!--Doughnut_box Ends-->
+      
+      <div class="student table"><!--STUDENT TABLE-->
+        <table><!--TABLE-->
+        <tr>
+          <th>S/N</th>
+          <th>COURSES NAME</th>
+          <th>DEPARTMENT</th>
+          <th>UNITS</th>
+          <th>GPA</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>GST 206</td>
+          <td>English</td>
+          <td>3</td>
+          <td>4.5/5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>GST 206</td>
+          <td>Music</td>
+          <td>5</td>
+          <td>4.9/5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>GST 206</td>
+          <td>Engineering</td>
+          <td>3</td>
+          <td>4.5/5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>GST 206</td>
+          <td>Cyber Security</td>
+          <td>3</td>
+          <td>3/5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>GST 206</td>
+          <td>Physics</td>
+          <td>3</td>
+          <td>3.5/5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>GST 206</td>
+          <td>Architecture</td>
+          <td>2</td>
+          <td>3.5/5</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>GST 206</td>
+          <td>Nursing</td>
+          <td>3</td>
+          <td>3/5</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>GST 206</td>
+          <td>Medical</td>
+          <td>4</td>
+          <td>4/5</td>
+        </tr>
+      </table><!--TABLE ENDS-->
+      </div>
+      <div class="d_box"><!--D_BOX-->
+        <img src="asset/img/dashboard-assets/dashboard-assets/female image.png" alt="">
+        <h2>When nothing goes right, go left</h2>
+        <p>Build your skill with courses and degree online from anywhere with professional intructors.</p>
+        <button>Learn More</button>
+      </div><!--D_BOX ENDS-->
+    </div><!--CONTAINER ENDS-->
+  </div><!--Multibox Ends-->
+<script src="daily.js"></script>
+<script src="monthly.js"></script>
+<script src="yearly.js"></script>
+</body>
+</html>
